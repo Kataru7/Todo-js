@@ -62,6 +62,7 @@ h1 {
     background-color: orange;
 }
 
+
 .description {
     width: 80%;
     display: flex;
@@ -91,3 +92,22 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 } 
+
+.todo-item.checked {
+    background-color: darkgrey;
+    opacity: 0.5;
+    color: gray;
+}
+
+.todo-item.deletion {
+    animation: opacity 1s ease-in-out
+}
+
+@keyframes opacity {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
